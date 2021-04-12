@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>
+        Super Trunfo
+    </title>
+  
+   <link href="https://deboradeotti.github.io/super-trunfo-sw/style.css" rel="stylesheet" />
+  <script src="https://deboradeotti.github.io/super-trunfo-sw/scripts.js"> </script>
+  
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://i.pinimg.com/originals/b6/af/5a/b6af5aeff0ee43a4253fc70c167bb6db.png" class="page-logo"
+            alt="">
+        <div class="fundo">
+        <h1 class="page-title">Super Trunfo das Naves</h1>
+          <br />
+          <div id="placar"></div>
+          <br />
+          <div id="quantidade-cartas"></div>
+       
+
+        <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+
+        <form id="form">
+            <h2>Escolha o seu atributo</h2>
+            <div class="wrapper">
+                <div id="cartas">
+                    <div id="carta-jogador" class="carta"></div>
+                    <div id="carta-maquina" class="carta"></div>
+                </div>
+                <button class="button-jogar" type="button" id="btnJogar" onclick="jogar()"
+                    disabled="false">Jogar</button>
+            </div>
+            <div id="resultado"></div>
+            <button type="button" id="btnProximaRodada" onclick="proximaRodada()" disabled="true">Proxima
+                rodada</button>
+        </form>
+       </div>
+    </div>
+</body>
+
+</html>
